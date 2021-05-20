@@ -7,6 +7,8 @@ const DB=require('./database/connectDB');
 app.use(express.json({extended:false}));
 
 DB();
+
+//Routes
 app.get('/',(req,res)=>{
     res.send("Welcome Herefsf!!");
 })
