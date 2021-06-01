@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const DescriptionSchema=new mongoose.Schema({
+const ProfileSchema=new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'users'
@@ -28,4 +28,4 @@ const DescriptionSchema=new mongoose.Schema({
     }
 });
 
-module.exports=Description =mongoose.model('desc',DescriptionSchema);
+module.exports=Profile =mongoose.model('profile',ProfileSchema);
