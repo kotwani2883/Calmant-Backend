@@ -9,9 +9,7 @@ app.use(express.json({extended:false}));
 DB();
 
 //Routes
-app.get('/',(req,res)=>{
-    res.send("Welcome Herefsf!!");
-})
+app.use('/api/auth',require('./routes/api/auth'));
 
 
 
