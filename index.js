@@ -9,8 +9,11 @@ app.use(express.json({extended:false}));
 DB();
 
 //Routes
-app.use('/api/auth',require('./routes/api/auth'));
 app.use('/api/user', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.get('/',(req,res)=>{
+    res.send("Welcome");
+})
 
 
 
