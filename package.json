@@ -18,5 +18,11 @@
     "express-validator": "^6.11.1",
     "mongoose": "^5.12.10",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kotwani2883/Calmant-Backend.git"
   }
+
 }

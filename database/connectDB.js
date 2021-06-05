@@ -2,11 +2,11 @@ const mongoose=require('mongoose');
 var dotenv = require('dotenv');
 
 dotenv.config();
-var url = process.env.MONGOLAB_URI
+
 const connectDB=async()=>{
     try{
         await mongoose.connect(
-           url,
+           'mongodb+srv://pk22:Palak@2211@cluster0.vaeal.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
             {
                 useNewUrlParser:true,
                 useUnifiedTopology:true,
