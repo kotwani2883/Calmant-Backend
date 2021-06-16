@@ -21,7 +21,6 @@
   },
   "devDependencies": {},
   "repository": {
-    "type": "git",
-    "url": "https://github.com/kotwani2883/Calmant-Backend.git"
+    "type": "git"
   }
 }
