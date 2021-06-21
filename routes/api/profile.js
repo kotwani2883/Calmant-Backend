@@ -1,12 +1,12 @@
 const express = require('express');
 const Profile = require('../../models/Profile');
 const router = express.Router();
-const { route } = require('./users');
+
 
 router.post('/add-concerns', async (req, res) => {
     console.log(req.body.concerns);
     try {
-        const Profile = await Profile.findOne({ user: req.body.uid });
+        const profile = await Profile.findOne({ user: req.body.uid });
         profile.concerns = req.body.concerns;
         await profile.save();
         return res.json(profile);
